@@ -1,0 +1,25 @@
+name: CI Flutter App
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  flutter_test:
+    name: Run flutter test and analyze
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Get Flutter dependencies
+      - run: flutter pub get
+      
+      # Analyze dart code for problems
+      - run: flutter analyze
+      
+      # Run Unit, Widget, and Integration tests
+      - run: flutter test
+
+      # Build APK
+      - run: flutter build apk
