@@ -16,7 +16,7 @@ jobs:
       - run: flutter pub get
       
       # Analyze dart code for problems
-      - run: flutter analyze
+      #- run: flutter analyze
       
       # Run Unit, Widget, and Integration tests
       - run: flutter test
