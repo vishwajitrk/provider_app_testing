@@ -1,4 +1,4 @@
-name: CI Flutter Workflow
+name: CI Flutter App Workflow
 on:
   pull_request:
     branches:
