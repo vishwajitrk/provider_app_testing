@@ -8,7 +8,7 @@ void main() {
     test('A new item should be added', () {
       var number = 25;
       favorites.add(number);
-      expect(favorites.items.contains(number), true);
+      expect(favorites.items.contains(number + 1), true);
     });
   });
 }
