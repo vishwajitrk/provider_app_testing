@@ -6,9 +6,9 @@ void main() {
     var favorites = Favorites();
 
     test('A new item should be added', () {
-      var number = 25;
+      var number = 20;
       favorites.add(number);
-      expect(favorites.items.contains(number + 1), true);
+      expect(favorites.items.contains(number), true);
     });
   });
 }
