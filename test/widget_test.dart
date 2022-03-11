@@ -6,7 +6,7 @@ void main() {
     var favorites = Favorites();
 
     test('A new item should be added', () {
-      var number = 20;
+      var number = 25;
       favorites.add(number);
       expect(favorites.items.contains(number), true);
     });
