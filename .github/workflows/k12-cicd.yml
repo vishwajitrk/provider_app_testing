@@ -52,7 +52,7 @@ jobs:
       - name: Decrypt Android keys
         run: sh ./.github/scripts/decrypt_android_keys.sh
         env:
-          ANDROID_KEYS_SECRET_PASSPHRASE: Testing123s
+          ANDROID_KEYS_SECRET_PASSPHRASE: Testing123
       - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
