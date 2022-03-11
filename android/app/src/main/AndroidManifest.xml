@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mhek12demo.k12_demoapp">
+    package="com.chandu.customapplication">
    <application
         android:label="K12 App"
         android:name="${applicationName}"

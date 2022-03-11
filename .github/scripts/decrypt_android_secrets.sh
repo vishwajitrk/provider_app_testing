@@ -8,8 +8,8 @@ echo $PWD
 
 echo "********1"
 ls -d $PWD/android/*
-mv ./android/expensemanager.jks ./android/app
-mv ./android/google-services.json ./android/app
+mv ./android/upload-key.jks ./android/app
+mv ./android/service_account_key.json ./android/app
 echo ./
 echo "********2"
 FILE=./android/app/upload-key.jks

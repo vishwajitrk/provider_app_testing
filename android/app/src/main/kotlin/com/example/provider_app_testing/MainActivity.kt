@@ -1,4 +1,4 @@
-package com.mhek12demo.k12_demoapp
+package com.chandu.customapplication
 
 import io.flutter.embedding.android.FlutterActivity
 
