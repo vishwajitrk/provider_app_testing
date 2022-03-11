@@ -8,11 +8,11 @@ echo $PWD
 
 echo "********1"
 ls -d $PWD/android/*
-mv ./android/upload-key.jks ./android/app
+mv ./android/mhekey.jks ./android/app
 mv ./android/service_account_key.json ./android/app
 echo ./
 echo "********2"
-FILE=./android/app/upload-key.jks
+FILE=./android/app/mhekey.jks
 if test -f "$FILE"; then
     echo "$FILE exists."
 fi

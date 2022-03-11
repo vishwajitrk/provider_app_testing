@@ -37,6 +37,7 @@ jobs:
   #       with:
   #         name: release-apk
   #         path: build/app/outputs/apk/release/app-release.apk
+  
   # CD
   deploy_android:
     name: Deploy flutter build
@@ -49,18 +50,18 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 12.x
-      # - name: Decrypt Android keys
-      #   run: sh ./.github/scripts/decrypt_android_secrets.sh
-      #   env:
-      #     ANDROID_KEYS_SECRET_PASSPHRASE: ${{ secrets.ANDROID_KEYS_SECRET_PASSPHRASE }}
+      - name: Decrypt Android keys
+        run: sh ./.github/scripts/decrypt_android_secrets.sh
+        env:
+          ANDROID_KEYS_SECRET_PASSPHRASE: ${{ secrets.ANDROID_KEYS_SECRET_PASSPHRASE }}
       - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
           flutter-version: 2.10.3
-      # - name: Install packages and Build APK
-      #   run: flutter pub get
-      # - name: Build APK
-      #   run: flutter build apk --release
+      - name: Install packages and Build APK
+        run: flutter pub get
+      - name: Build APK
+        run: flutter build apk --release
       - name: Run Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
