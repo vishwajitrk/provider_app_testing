@@ -57,10 +57,10 @@ jobs:
         uses: subosito/flutter-action@v1
         with:
           flutter-version: 2.10.3
-      - name: Install packages and Build APK
-        run: flutter pub get
-      - name: Build APK
-        run: flutter build apk --release
+      # - name: Install packages and Build APK
+      #   run: flutter pub get
+      # - name: Build APK
+      #   run: flutter build apk --release
       - name: Run Fastlane
         uses: maierj/fastlane-action@v1.4.0
         with:
