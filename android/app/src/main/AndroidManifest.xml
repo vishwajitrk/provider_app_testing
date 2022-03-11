@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.provider_app_testing">
+    package="com.mhek12demo.k12_demoapp">
    <application
-        android:label="provider_app_testing"
+        android:label="K12 App"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
