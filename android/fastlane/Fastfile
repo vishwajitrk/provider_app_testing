@@ -15,6 +15,11 @@
 
 default_platform(:android)
 platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+  
   desc "Deploy to closed beta track"
   lane :closed_beta do
     begin
