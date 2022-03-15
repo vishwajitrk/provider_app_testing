@@ -1,4 +1,4 @@
-package com.chandu.customapplication
+package com.vishwajit.demoapp
 
 import io.flutter.embedding.android.FlutterActivity
 
